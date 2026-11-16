@@ -1,0 +1,22 @@
+{
+    "experiment": "partial_layer3_aux010_seed2026",
+    "architecture": "Partial Sharing ResNet18",
+    "share_until": "layer3",
+    "primary_task": "Character Recognition",
+    "primary_classes": 6249,
+    "auxiliary_task": "Calligraphic Source Classification",
+    "auxiliary_classes": 19,
+    "character_loss_weight": 1.0,
+    "source_loss_weight": 0.1,
+    "model_selection": "Val Character Top-1",
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "seed": 2026,
+    "total_params": 22785724,
+    "trainable_params": 22785724
+}

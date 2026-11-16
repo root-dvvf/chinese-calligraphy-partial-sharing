@@ -1,0 +1,16 @@
+{
+    "experiment": "ResNet18 + Class-Balanced Loss",
+    "model": "ResNet18",
+    "pretrained": false,
+    "loss": "Class-Balanced CrossEntropy",
+    "cb_beta": 0.9999,
+    "num_classes": 6249,
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "seed": 42
+}

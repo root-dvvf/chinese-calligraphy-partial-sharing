@@ -1,0 +1,12 @@
+{
+    "experiment": "source_baseline_resnet18_seed123",
+    "architecture": "ResNet18",
+    "task": "Source Recognition",
+    "seed": 123,
+    "best_epoch": 20,
+    "val_source_top1": 97.43552593451173,
+    "val_source_top5": 99.91306867574616,
+    "val_source_macro_f1": 0.9767482217440284,
+    "val_loss": 0.10657425548841351,
+    "total_params": 11186259
+}

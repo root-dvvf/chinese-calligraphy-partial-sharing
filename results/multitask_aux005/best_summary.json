@@ -1,0 +1,14 @@
+{
+    "experiment": "multitask_aux005",
+    "source_weight": 0.05,
+    "best_epoch": 20,
+    "val_character_top1": 95.97942625325993,
+    "val_character_top5": 99.1306867574616,
+    "val_character_macro_f1": 0.9565843004633212,
+    "val_source_top1": 94.13213561286584,
+    "val_source_macro_f1": 0.9452886899224594,
+    "val_total_loss": 0.21415169250788946,
+    "val_character_loss": 0.20503410748366652,
+    "val_source_loss": 0.18235170343792015,
+    "total_params": 14391996
+}

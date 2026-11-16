@@ -1,0 +1,7 @@
+{
+    "model": "ResNet18 Scratch",
+    "test_samples": 13804,
+    "test_top1": 96.32715155027529,
+    "test_top5": 99.17415241958852,
+    "test_macro_f1": 0.9603411151178795
+}

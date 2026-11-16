@@ -1,0 +1,22 @@
+{
+    "experiment": "MultiTask ResNet18 Equal Weight",
+    "backbone": "ResNet18",
+    "pretrained": false,
+    "task_1": "Character Recognition",
+    "task_1_classes": 6249,
+    "task_2": "Calligraphic Source Classification",
+    "task_2_classes": 19,
+    "loss": "Character CE + Source CE",
+    "character_loss_weight": 1.0,
+    "source_loss_weight": 1.0,
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "seed": 42,
+    "total_params": 14391996,
+    "trainable_params": 14391996
+}

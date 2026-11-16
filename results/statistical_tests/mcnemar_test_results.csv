@@ -1,0 +1,4 @@
+﻿seed,num_samples,both_correct,baseline_correct_ours_wrong,baseline_wrong_ours_correct,both_wrong,discordant_pairs,net_corrected_samples,ours_to_baseline_discordant_ratio,exact_mcnemar_p_value,significant_at_0.05
+42,13804,13119,165,204,316,369,39,1.2363636363636363,0.04775902976009089,True
+123,13804,13132,147,186,339,333,39,1.2653061224489797,0.03714811109845561,True
+2026,13804,13121,130,228,325,358,98,1.7538461538461538,2.501206183340589e-07,True

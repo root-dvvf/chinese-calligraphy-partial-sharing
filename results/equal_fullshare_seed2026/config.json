@@ -1,0 +1,20 @@
+{
+    "experiment": "equal_fullshare_seed2026",
+    "architecture": "full",
+    "seed": 2026,
+    "source_weight": 1.0,
+    "loss": "L_char + 1.0 * L_source",
+    "epochs": 20,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "normalization": "ImageNet mean/std",
+    "pretrained": false,
+    "model_selection": "Val Character Top-1",
+    "train_csv": "/root/calligraphy_sci/dual_splits/dual_train.csv",
+    "val_csv": "/root/calligraphy_sci/dual_splits/dual_val.csv",
+    "total_params": 14391996
+}

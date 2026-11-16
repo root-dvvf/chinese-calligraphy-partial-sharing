@@ -1,0 +1,17 @@
+{
+    "experiment": "MobileNetV3-Large + CE",
+    "model": "MobileNetV3-Large",
+    "pretrained": false,
+    "loss": "CrossEntropyLoss",
+    "num_classes": 6249,
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "seed": 42,
+    "total_params": 12207001,
+    "trainable_params": 12207001
+}

@@ -1,0 +1,7 @@
+{
+    "model": "ResNet18 + Class-Balanced Loss",
+    "test_samples": 13804,
+    "test_top1": 95.94320486815415,
+    "test_top5": 99.12344248044045,
+    "test_macro_f1": 0.9559802594735243
+}

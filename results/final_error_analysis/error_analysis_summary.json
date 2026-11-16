@@ -1,0 +1,33 @@
+{
+    "num_test_samples": 13804,
+    "seed_summaries": [
+        {
+            "seed": 42,
+            "both_correct": 13119,
+            "baseline_wrong_ours_correct": 204,
+            "baseline_correct_ours_wrong": 165,
+            "both_wrong": 316,
+            "net_corrected_samples": 39
+        },
+        {
+            "seed": 123,
+            "both_correct": 13132,
+            "baseline_wrong_ours_correct": 186,
+            "baseline_correct_ours_wrong": 147,
+            "both_wrong": 339,
+            "net_corrected_samples": 39
+        },
+        {
+            "seed": 2026,
+            "both_correct": 13121,
+            "baseline_wrong_ours_correct": 228,
+            "baseline_correct_ours_wrong": 130,
+            "both_wrong": 325,
+            "net_corrected_samples": 98
+        }
+    ],
+    "consistent_improved_all_3_seeds": 17,
+    "consistent_degraded_all_3_seeds": 7,
+    "improved_at_least_2_seeds": 115,
+    "degraded_at_least_2_seeds": 72
+}

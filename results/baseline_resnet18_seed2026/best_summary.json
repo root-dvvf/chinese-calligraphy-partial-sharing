@@ -1,0 +1,11 @@
+{
+    "experiment": "baseline_resnet18_seed2026",
+    "architecture": "ResNet18",
+    "seed": 2026,
+    "best_epoch": 20,
+    "val_top1": 96.46479281367719,
+    "val_top5": 99.20312952767314,
+    "val_macro_f1": 0.9617024430881707,
+    "val_loss": 0.18947000564077357,
+    "total_params": 14382249
+}

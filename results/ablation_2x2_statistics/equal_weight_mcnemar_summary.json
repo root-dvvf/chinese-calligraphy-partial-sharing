@@ -1,0 +1,24 @@
+[
+    {
+        "task": "character",
+        "seeds": [
+            42,
+            123,
+            2026
+        ],
+        "mean_improvement_pp": 2.463054187192123,
+        "std_improvement_pp": 0.14704276391034993,
+        "all_seeds_improved": true
+    },
+    {
+        "task": "source",
+        "seeds": [
+            42,
+            123,
+            2026
+        ],
+        "mean_improvement_pp": 0.08693132425383965,
+        "std_improvement_pp": 0.08813043364673916,
+        "all_seeds_improved": false
+    }
+]

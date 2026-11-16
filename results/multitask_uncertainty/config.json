@@ -1,0 +1,23 @@
+{
+    "experiment": "MultiTask ResNet18 + Uncertainty Weighting",
+    "backbone": "ResNet18",
+    "pretrained": false,
+    "task_1": "Character Recognition",
+    "task_1_classes": 6249,
+    "task_2": "Calligraphic Source Classification",
+    "task_2_classes": 19,
+    "loss_weighting": "Homoscedastic Uncertainty Weighting",
+    "initial_log_var_character": 0.0,
+    "initial_log_var_source": 0.0,
+    "initial_character_weight": 1.0,
+    "initial_source_weight": 1.0,
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "seed": 42,
+    "total_params": 14391998
+}

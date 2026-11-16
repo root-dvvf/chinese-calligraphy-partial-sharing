@@ -1,0 +1,23 @@
+{
+    "experiment": "MultiTask ResNet18 Auxiliary Source lambda=0.25",
+    "backbone": "ResNet18",
+    "pretrained": false,
+    "primary_task": "Character Recognition",
+    "primary_classes": 6249,
+    "auxiliary_task": "Calligraphic Source Classification",
+    "auxiliary_classes": 19,
+    "character_loss_weight": 1.0,
+    "source_loss_weight": 0.25,
+    "total_loss": "L_character + 0.25 * L_source",
+    "model_selection": "Val Character Top-1",
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "seed": 42,
+    "total_params": 14391996,
+    "trainable_params": 14391996
+}

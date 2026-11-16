@@ -1,0 +1,38 @@
+[
+    {
+        "model": "ResNet18 Baseline",
+        "batch_size": 1,
+        "mean_batch_latency_ms": 2.1629337615966797,
+        "std_batch_latency_ms": 0.48764575173559305,
+        "median_batch_latency_ms": 2.101248025894165,
+        "per_image_latency_ms": 2.1629337615966797,
+        "throughput_images_per_second": 462.3350089379524
+    },
+    {
+        "model": "ResNet18 Baseline",
+        "batch_size": 128,
+        "mean_batch_latency_ms": 12.409491456985474,
+        "std_batch_latency_ms": 0.058771362252789054,
+        "median_batch_latency_ms": 12.397567749023438,
+        "per_image_latency_ms": 0.09694915200769902,
+        "throughput_images_per_second": 10314.68537157073
+    },
+    {
+        "model": "Partial Sharing ResNet18",
+        "batch_size": 1,
+        "mean_batch_latency_ms": 2.7196047348976133,
+        "std_batch_latency_ms": 0.27727095151738596,
+        "median_batch_latency_ms": 2.700800061225891,
+        "per_image_latency_ms": 2.7196047348976133,
+        "throughput_images_per_second": 367.7004923429241
+    },
+    {
+        "model": "Partial Sharing ResNet18",
+        "batch_size": 128,
+        "mean_batch_latency_ms": 13.90303846359253,
+        "std_batch_latency_ms": 0.3601362315493829,
+        "median_batch_latency_ms": 13.890560150146484,
+        "per_image_latency_ms": 0.10861748799681664,
+        "throughput_images_per_second": 9206.620576875319
+    }
+]

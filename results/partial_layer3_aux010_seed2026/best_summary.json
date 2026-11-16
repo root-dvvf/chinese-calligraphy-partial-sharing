@@ -1,0 +1,17 @@
+{
+    "experiment": "partial_layer3_aux010_seed2026",
+    "architecture": "Partial Sharing ResNet18",
+    "share_until": "layer3",
+    "source_weight": 0.1,
+    "seed": 2026,
+    "best_epoch": 20,
+    "val_character_top1": 96.66763257026949,
+    "val_character_top5": 99.29006085192698,
+    "val_character_macro_f1": 0.9637513759594469,
+    "val_source_top1": 96.72558678643871,
+    "val_source_macro_f1": 0.9701104530724378,
+    "val_total_loss": 0.18699020943117295,
+    "val_character_loss": 0.17407489187369932,
+    "val_source_loss": 0.1291531742901534,
+    "total_params": 22785724
+}

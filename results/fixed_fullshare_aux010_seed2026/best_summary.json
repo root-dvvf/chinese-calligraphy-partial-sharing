@@ -1,0 +1,11 @@
+{
+    "seed": 2026,
+    "best_epoch": 18,
+    "source_weight": 0.1,
+    "params": 14391996,
+    "val_char_top1": 95.96493769921763,
+    "val_char_top5": 99.05824398725007,
+    "val_char_macro_f1": 0.9562123350769535,
+    "val_source_top1": 95.23326572008114,
+    "val_source_macro_f1": 0.9558806297621911
+}

@@ -1,0 +1,14 @@
+{
+    "experiment": "equal_fullshare_seed123",
+    "architecture": "full",
+    "seed": 123,
+    "best_epoch": 19,
+    "source_weight": 1.0,
+    "total_params": 14391996,
+    "val_char_top1": 94.1828455520139,
+    "val_char_top5": 98.86264850767893,
+    "val_char_macro_f1": 0.9350702101902293,
+    "val_source_top1": 97.55867864387135,
+    "val_source_top5": 99.92755722978846,
+    "val_source_macro_f1": 0.9777512243466975
+}

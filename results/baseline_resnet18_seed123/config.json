@@ -1,0 +1,20 @@
+{
+    "experiment": "baseline_resnet18_seed123",
+    "architecture": "ResNet18",
+    "task": "Character Recognition",
+    "num_classes": 6249,
+    "pretrained": false,
+    "train_csv": "/root/calligraphy_sci/dual_splits/dual_train.csv",
+    "val_csv": "/root/calligraphy_sci/dual_splits/dual_val.csv",
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "model_selection": "Val Character Top-1",
+    "seed": 123,
+    "total_params": 14382249,
+    "trainable_params": 14382249
+}

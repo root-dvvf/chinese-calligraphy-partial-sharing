@@ -1,0 +1,21 @@
+{
+    "experiment": "source_baseline_resnet18_seed123",
+    "architecture": "ResNet18",
+    "task": "Source Recognition",
+    "num_source_classes": 19,
+    "pretrained": false,
+    "train_csv": "/root/calligraphy_sci/dual_splits/dual_train.csv",
+    "val_csv": "/root/calligraphy_sci/dual_splits/dual_val.csv",
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "loss": "CrossEntropyLoss",
+    "model_selection": "Val Source Top-1",
+    "seed": 123,
+    "total_params": 11186259,
+    "trainable_params": 11186259
+}

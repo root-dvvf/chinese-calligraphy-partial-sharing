@@ -1,0 +1,14 @@
+{
+    "experiment": "equal_partial_layer3_seed123",
+    "architecture": "partial",
+    "seed": 123,
+    "best_epoch": 19,
+    "source_weight": 1.0,
+    "total_params": 22785724,
+    "val_char_top1": 96.43581570559259,
+    "val_char_top5": 99.24659518980006,
+    "val_char_macro_f1": 0.9617724774469855,
+    "val_source_top1": 97.7977397855694,
+    "val_source_top5": 99.97102289191538,
+    "val_source_macro_f1": 0.9798416596072359
+}

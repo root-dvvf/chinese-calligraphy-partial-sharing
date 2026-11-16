@@ -1,0 +1,11 @@
+{
+    "best_epoch": 20,
+    "best_selection_score": 95.86351782092147,
+    "val_character_top1": 94.01622718052738,
+    "val_character_macro_f1": 0.9329455798730882,
+    "val_source_top1": 97.71080846131557,
+    "val_source_macro_f1": 0.9792417692794003,
+    "train_conflict_ratio": 47.47948417350528,
+    "train_mean_cosine_similarity": 0.0023335942512566162,
+    "total_params": 14391996
+}

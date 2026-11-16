@@ -1,0 +1,21 @@
+{
+    "experiment": "MultiTask ResNet18 + PCGrad",
+    "backbone": "ResNet18",
+    "pretrained": false,
+    "task_1": "Character Recognition",
+    "task_1_classes": 6249,
+    "task_2": "Calligraphic Source Classification",
+    "task_2_classes": 19,
+    "multitask_method": "PCGrad",
+    "pcgrad_scope": "shared backbone parameters",
+    "loss": "Character CE + Source CE",
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "image_size": 224,
+    "augmentation": "RandomRotation(5)",
+    "seed": 42,
+    "total_params": 14391996
+}
