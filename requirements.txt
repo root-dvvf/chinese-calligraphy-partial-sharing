@@ -1,0 +1,23 @@
+Runtime: Python 3.10.12
+
+The original experiments were run in an NVIDIA NGC environment with:
+
+PyTorch 2.5.0a0+e000cf0ad9.nv24.10
+
+CUDA runtime 12.6
+
+cuDNN 9.5.0
+
+IMPORTANT:
+
+The PyTorch build above is an NVIDIA NGC-specific build, not a standard
+
+PyPI release. Install/activate the matching NVIDIA NGC PyTorch environment
+
+first. Install a torchvision build compatible with that exact PyTorch build.
+
+Do not replace the NGC build with an arbitrary PyPI PyTorch version when
+
+reproducing the original GPU experiments.
+
+numpy pandas Pillow tqdm scikit-learn matplotlib scipy
