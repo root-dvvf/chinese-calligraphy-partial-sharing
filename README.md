@@ -94,6 +94,64 @@ Random seeds are specified in the corresponding experiment scripts and output di
 
 If you use this code in your research, please cite the associated paper:
 
+
+
+## Trained Model Checkpoints (Zenodo)
+
+The final trained models for our partial-sharing ResNet18 approach are publicly archived on Zenodo.
+
+**Zenodo DOI (Version v1):** https://doi.org/10.5281/zenodo.24269713
+
+**DOI for all versions:** https://doi.org/10.5281/zenodo.24269712
+
+### Available Checkpoints
+
+| File | Random Seed | Model |
+|---|---|---|
+| `best_model_seed42.pth` | 42 | Partial-Sharing ResNet18 |
+| `best_model_seed123.pth` | 123 | Partial-Sharing ResNet18 |
+| `best_model_seed2026.pth` | 2026 | Partial-Sharing ResNet18 |
+
+All three checkpoints use the same architecture:
+
+- Backbone: ResNet18 trained from scratch
+- Shared layers: stem, layer1, layer2, and layer3
+- Task-specific layers: independent layer4 blocks and classification heads
+- Primary task: Character Recognition (6,249 classes)
+- Auxiliary task: Calligraphic Source Recognition (19 classes)
+- Loss function: L = L_character + 0.1 * L_source
+
+### Held-Out Test Performance
+
+Results are reported as mean +/- sample standard deviation over three random seeds.
+
+| Metric | Partial Sharing (Ours) |
+|---|---|
+| Character Top-1 | 96.5662% +/- 0.1206% |
+| Character Macro-F1 | 0.962637 +/- 0.001417 |
+| Source Top-1 | 96.7256% +/- 0.0735% |
+| Source Macro-F1 | 0.970277 +/- 0.000637 |
+
+The final model improves Character Top-1 accuracy by 0.4250 percentage points compared with the standardized single-task ResNet18 baseline on the held-out test set.
+
+### Dataset Availability
+
+The experiments use a processed version of the Chinese Calligraphy Dataset.
+
+Original dataset:
+https://github.com/zhuojg/chinese-calligraphy-dataset
+
+The original dataset images are not redistributed in the Zenodo model archive.
+
+### Citation
+
+If you use the trained checkpoints, please cite the Zenodo record:
+
+Wen, H., & Liu, Z. (2026). *Trained Partial-Sharing ResNet18 Models for Dual-Task Chinese Calligraphy Recognition* (Version v1). Zenodo.
+
+https://doi.org/10.5281/zenodo.24269713
+
+
 *The bibliographic information will be added after publication.*
 
 ## 11. Contact
