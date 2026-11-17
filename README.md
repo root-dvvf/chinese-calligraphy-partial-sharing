@@ -90,6 +90,24 @@ Training scripts, evaluation scripts, dataset split files, and experimental resu
 
 Random seeds are specified in the corresponding experiment scripts and output directories.
 
+### Final Model Configuration and Reproduction
+
+The proposed final model uses a partially shared ResNet18 architecture, in which the stem and layer1–layer3 are shared between the Character and Source recognition tasks, while layer4 and the classification heads are task-specific.
+
+The sharing depth is explicitly specified using the `--share-until` argument. The final experiments use `--share-until layer3`, with the auxiliary Source loss weight set to 0.1.
+
+The following commands reproduce the final training configurations for the three random seeds:
+
+```bash
+python train_partial_sharing.py --share-until layer3 --source-weight 0.1 --seed 42
+python train_partial_sharing.py --share-until layer3 --source-weight 0.1 --seed 123
+python train_partial_sharing.py --share-until layer3 --source-weight 0.1 --seed 2026
+```
+
+For the sharing-depth ablation study, `--share-until layer2` can be specified to use independent layer3 and layer4 blocks for the two tasks.
+
+The default sharing depth in the training script is `layer2`; however, all final reported experiments explicitly use `--share-until layer3`.
+
 ## 10. Citation
 
 If you use this code in your research, please cite the associated paper:
