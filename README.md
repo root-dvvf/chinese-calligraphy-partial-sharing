@@ -80,9 +80,65 @@ These materials support the comparisons between single-task learning, full param
 
 ## 8. Environment
 
-The experiments were conducted using Python and PyTorch.
+### Hardware Configuration
 
-The exact software dependencies and execution configurations will be documented in the corresponding environment configuration files.
+The experiments were conducted on a Linux-based high-performance computing server with the following hardware:
+
+- CPU: Intel Xeon Gold 6530
+- GPU: NVIDIA A100 80GB PCIe
+
+### Software Environment
+
+The original experimental environment was configured as follows:
+
+- Python: 3.10.12
+- PyTorch: 2.5.0a0+e000cf0ad9.nv24.10
+- CUDA Runtime: 12.6
+- cuDNN: 9.5.0
+- NVIDIA Driver: 595.58.03
+
+The PyTorch version used in this study is an NVIDIA NGC-specific build rather than a standard PyPI release.
+
+The main Python dependencies are listed in `requirements.txt`. Exact versions of all supplementary Python packages are not pinned.
+
+### Training Configuration
+
+All models were trained from scratch without ImageNet pretrained weights.
+
+The main training configurations were:
+
+- Backbone: ResNet18
+- Input resolution: 224 × 224
+- Training augmentation: RandomRotation(±5°)
+- Normalization: ImageNet mean and standard deviation
+- Optimizer: AdamW
+- Initial learning rate: 0.001
+- Learning rate scheduler: CosineAnnealingLR
+- Training epochs: 20
+- Batch size: 128
+- Random seeds: 42, 123, and 2026
+
+The final proposed model uses partial parameter sharing through layer3, with task-specific layer4 blocks and classification heads.
+
+The auxiliary Source loss weight is set to 0.1.
+
+The best model is selected according to Character Top-1 accuracy on the validation set.
+
+### Dataset Paths
+
+The experiments were originally conducted under:
+
+`/root/calligraphy_sci/`
+
+The original dataset images are available from:
+
+https://github.com/zhuojg/chinese-calligraphy-dataset
+
+The repository provides the experimental training, validation, and test split files.
+
+Some scripts and CSV files use absolute paths from the original computing environment. Users must adjust these paths to match their local dataset directories before running the experiments.
+
+The published dataset splits and class-label mappings should be preserved when reproducing the reported results.
 
 ## 9. Reproducibility
 
