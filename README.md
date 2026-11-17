@@ -99,8 +99,7 @@ The original experimental environment was configured as follows:
 
 The PyTorch version used in this study is an NVIDIA NGC-specific build rather than a standard PyPI release.
 
-The main Python dependencies are listed in `requirements.txt`. Exact versions of all supplementary Python packages are not pinned.
-
+The main Python dependencies are listed in requirements.txt.
 ### Training Configuration
 
 All models were trained from scratch without ImageNet pretrained weights.
