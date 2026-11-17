@@ -185,6 +185,32 @@ The final trained models for our partial-sharing ResNet18 approach are publicly 
 | `best_model_seed123.pth` | 123 | Partial-Sharing ResNet18 |
 | `best_model_seed2026.pth` | 2026 | Partial-Sharing ResNet18 |
 
+### Checkpoint Placement for Evaluation
+
+To evaluate the trained partial-sharing models using the original testing scripts, download the three checkpoints from Zenodo and organize them as follows:
+
+```text
+checkpoints/
+├── partial_layer3_aux010_seed42/
+│   └── best_model.pth
+├── partial_layer3_aux010_seed123/
+│   └── best_model.pth
+└── partial_layer3_aux010_seed2026/
+    └── best_model.pth
+```
+
+The downloaded checkpoints should be renamed as follows:
+
+- `best_model_seed42.pth` → `partial_layer3_aux010_seed42/best_model.pth`
+- `best_model_seed123.pth` → `partial_layer3_aux010_seed123/best_model.pth`
+- `best_model_seed2026.pth` → `partial_layer3_aux010_seed2026/best_model.pth`
+
+These files should be placed under `/root/calligraphy_sci/checkpoints/`, which is the original project directory used by the testing scripts.
+
+The complete `test_final_models.py` script also requires the three Character-only ResNet18 baseline checkpoints, stored under `checkpoints/baseline_resnet18_seed{seed}/best_model.pth`.
+
+Users should configure the dataset paths and preserve the published test split and label mappings before evaluation.
+
 All three checkpoints use the same architecture:
 
 - Backbone: ResNet18 trained from scratch
